@@ -2,6 +2,8 @@ body{
     background: black;
     margin:0;
     padding:0;
+    max-height: 100vh;
+    overflow: hidden;
 }
 header{
     color:white;
@@ -88,3 +90,122 @@ main{
 #description{
     color:white;
 }
+
+.grass{
+    position:fixed;
+    height:30%;
+    background: rgb(2, 88, 16);
+    bottom:0;
+    left:0;
+    right:0;
+    z-index:-1;
+}
+
+.sky{
+    position:fixed;
+    height:70%;
+    top:0;
+    left:0;
+    right:0;
+    background-color: lightblue;
+    z-index:-1;
+}
+
+.Tora{
+    position:relative;
+    top:90%;
+    margin-left: 20%;
+    height: 13rem;
+    width: 8rem;
+    background: rgb(10, 10, 10);
+    border-radius: 100% 100% 77% 74% / 100% 100% 36% 36%;
+    z-index:100;
+}
+
+.Torahead{
+    position:relative;
+    height:6.5rem;
+    width:11rem;
+    background-color: rgb(0, 0, 0);
+    left:50%;
+    transform: translateX(-50%);
+    top:-10%;
+    border-radius: 40%;
+}
+
+.eye1{
+    width:0.8rem;
+    height:0.8rem;
+    background-color:rgb(0, 0, 0);
+    position: relative;
+    top:-45%;
+    left:5%;
+    border-radius: 100%;
+    border: 0.7rem rgb(189, 177, 6) solid;
+}
+.eye2{
+    width:0.8rem;
+    height:0.8rem;
+    background-color:rgb(0, 0, 0);
+    position: relative;
+    top:-61.5%;
+    right:-68.5%;
+    border-radius: 100%;
+    border: 0.7rem rgb(189, 177, 6) solid;
+}
+
+.toranose{
+    width:0.6rem;
+    height:0.8rem;
+    background-color: rgb(131, 100, 100);
+    top: -70%;
+    position:relative;
+    left:50%;
+    transform: translateX(-50%);
+    border-radius: 0% 0% 52% 50% / 55% 50% 49% 47%;
+}
+
+.leftear{
+    width: 2rem;
+    height:3rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100% 100% 46% 50% / 100% 100% 42% 47%;
+    position:relative;
+    top:-112%;
+}
+.rightear{
+    width: 2rem;
+    height:3rem;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100% 100% 46% 50% / 100% 100% 42% 47%;
+    position:relative;
+    top:-134%;
+    left:80%;
+}
+
+.tail{
+    width:10rem;
+    height:1rem;
+    background-color: rgb(10,10,10);
+    position: relative;
+    top:-50%;
+    left:40%;
+    border-radius: 100% 55% 52% 50% / 55% 50% 49% 47%;
+}
+
+.chatbox1{
+    min-width:15rem;
+    min-height: 10rem;
+    background-color: white;
+    position:relative;
+    top: -220%;
+    left: 150%;
+    border-radius: 43% 55% 42% 0% / 55% 50% 46% 47%;
+    text-align: center;
+}
+
+.chat1{
+    padding-top:3rem;
+    font-family: 'Roboto Slab', serif;
+}
+
