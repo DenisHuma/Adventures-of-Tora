@@ -1,0 +1,90 @@
+body{
+    background: black;
+    margin:0;
+    padding:0;
+}
+header{
+    color:white;
+}
+
+#title{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Rubik Moonrocks', cursive;
+    color: white;
+}
+
+
+main{
+    position:relative;
+    transition: '0.5s';
+}
+
+#cat-body{
+    display:grid;
+    max-width: 100em;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    position:fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20%;
+    z-index:-1;
+}
+#eye-right,
+#eye-left{
+    height: 7em;
+    width: 13em;
+    background: rgb(189, 177, 6);
+    border-radius: 0 0 20% 20%/0 0 100% 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pupil{
+    background: black;
+    height:5rem;
+    width:1rem;
+    border-radius: 100%;
+
+}
+
+#front-page-buttons{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:1rem;
+    position:fixed;
+    right:0;
+    left:0;
+    top:50%;
+    margin: 0 5rem;
+} 
+
+.main-button{
+    text-align: center;
+    color:white;
+    background:none;
+}
+
+.button-design{
+    background: none;
+    color:white;
+    padding: 1rem 5rem;
+    border: blue 1px solid;
+    cursor:pointer;
+    transition: 0.5s;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+}
+
+.button-design:hover{
+    background:rgb(140, 4, 230);
+    font-size: 1.7rem;
+    border: white solid;
+    box-shadow: 3px 3px 8px 4px rgba(140, 4, 230, 0.8);
+}
+
+#description{
+    color:white;
+}
