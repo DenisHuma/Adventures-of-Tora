@@ -1,6 +1,6 @@
 //OOP
 
-//functions
+//function
 function firstpage(){
     frontpage.style.display = 'none';
     let grass = document.createElement('div');
