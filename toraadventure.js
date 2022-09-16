@@ -1,7 +1,7 @@
 //OOP
 
 //function
-function firstpage(){
+function firstpage() {
     frontpage.style.display = 'none';
     let grass = document.createElement('div');
     grass.classList.add("grass");
@@ -24,12 +24,17 @@ function firstpage(){
     meow.classList.add('meowbutton');
     chatbox.appendChild(meow);
     meow.innerHTML = 'MEOW';
-    meow.addEventListener('click', function(){
+    meow.addEventListener('click', function () {
         meow.style.display = 'none';
         Tora.style.bottom = '-150%';
         chatbox.style.bottom = '-100%';
-        setTimeout(function(){chatbox.style.display = 'none'; Tora.style.display = 'none';}, 2000);
+        setTimeout(function () { chatbox.style.display = 'none'; Tora.style.display = 'none'; }, 2000);
         sky.appendChild(canvas);
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'module';
+        script.src = 'torapac.js';
+        head.appendChild(script);
     })
 }
 
@@ -46,8 +51,8 @@ window.onload = function () {
     startbutton.addEventListener("click", function () {
         firstpage();
     })
-    
 
-    
-    
+
+
+
 }

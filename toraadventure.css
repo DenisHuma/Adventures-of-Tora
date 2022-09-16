@@ -156,11 +156,10 @@ main{
 }
 
 .canvaspacman{
-    width: 60px;
-    height:60px;
     background-color: white;
     position: absolute;
-    top:50%;
+    bottom:-70%;
+    transition: 6s;
     left: 50%;
     transform: translate(-50%, -50%);
 }
