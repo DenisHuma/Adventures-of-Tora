@@ -27,7 +27,7 @@ export default class TileMap{
         for(let row = 0; row < this.map.length; row++){
             for(let column = 0; column < this.map[row].length; column++){
                 let tile = this.map[row][column];
-                if(tile==1){
+                if(tile==1 ){
                     this.#drawWall(ctx,column,row,this.tileSize)
                 }
                 else if(tile==0){
@@ -40,6 +40,7 @@ export default class TileMap{
         }
     }
 
+
     #drawWall(ctx,column,row,size){
         ctx.drawImage(this.wall,column*this.tileSize,row*this.tileSize,size,size);
     }
@@ -49,7 +50,6 @@ export default class TileMap{
     #drawPlayer(ctx,column,row,size){
         ctx.drawImage(this.player,column*this.tileSize,row*this.tileSize,size,size);
     }
-
     setCanvasSize(canvas){
         canvas.width = this.map[0].length * this.tileSize;
         canvas.height = this.map.length * this.tileSize;
